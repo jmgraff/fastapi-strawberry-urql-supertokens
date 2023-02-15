@@ -1,11 +1,16 @@
 # FastAPI, Strawberry, React, URQL Project Template
 
-This project is meant to be a starting point for future GraphQL projects.
+This project is meant to be a starting point for the following stack:
+ - FastAPI
+ - Strawberry GraphQL
+ - ReactJS
+ - URQL
+ - SuperTokens.
 
 An in-depth article explaining this code is available on codehammer.io:
 https://codehammer.io/full-stack-graphql-example-fastapi-strawberry-and-urql
 
-## Requiremets
+## Requirements
 
 In order to run this, you'll need:
  - Linux
