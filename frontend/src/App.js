@@ -1,15 +1,21 @@
 import { Provider } from "urql";
 import { urqlClient } from "./utils";
+import { BrowserRouter } from "react-router-dom";
 
-import Message from "./Message";
-import MessageForm from "./MessageForm";
+import { SuperTokensWrapper } from "supertokens-auth-react";
+
+import Main from "./Main";
+
 
 function App() {
     return (
-        <Provider value={urqlClient}>
-            <Message />
-            <MessageForm />
-        </Provider>
+        <SuperTokensWrapper>
+            <Provider value={urqlClient}>
+                <BrowserRouter>
+                    <Main />
+                </BrowserRouter>
+            </Provider>
+        </SuperTokensWrapper>
     );
 }
 

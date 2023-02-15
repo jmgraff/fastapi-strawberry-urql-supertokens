@@ -4,6 +4,6 @@ workdir /opt/container
 
 copy . .
 
-run pip install -r requirements.txt
+run apk add build-base && pip install -r requirements.txt
 
 entrypoint ["python", "main.py"]

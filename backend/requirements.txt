@@ -1,3 +1,4 @@
 fastapi
 strawberry-graphql
+supertokens-python
 uvicorn[standard]

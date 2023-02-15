@@ -15,3 +15,16 @@ services:
     environment:
       - REACT_APP_HOSTNAME=${HOSTNAME}
       - PROD=${PROD}
+  mysql:
+    image: mysql
+    environment:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_USER: supertokens
+          MYSQL_PASSWORD: supertokens
+          MYSQL_DATABASE: supertokens
+  supertokens:
+    image: registry.supertokens.io/supertokens/supertokens-mysql
+    ports:
+      - 3567:3567
+    environment:
+      - MYSQL_CONNECTION_URI="mysql://supertokens:supertokens@mysql/supertokens"

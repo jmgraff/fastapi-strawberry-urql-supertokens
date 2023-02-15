@@ -1,4 +1,7 @@
+# change these variables for your app
 export HOSTNAME=localhost
+
+# do not change this
 export PROD=1
 
 # Run this only once after cloning the repository
