@@ -1,4 +1,7 @@
 services:
+  mysql:
+    volumes:
+      - ./data/mysql:/var/lib/mysql
   backend:
     volumes:
       - ./backend:/opt/container

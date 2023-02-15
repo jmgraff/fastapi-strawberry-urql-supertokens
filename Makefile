@@ -21,6 +21,6 @@ down:
 	docker compose down
 
 clean:
-	sudo rm -rf node_modules frontend/node_modules frontend/build backend/__pycache__
+	sudo rm -rf data frontend/build backend/__pycache__
 
 .PHONY: build dev prod down clean
