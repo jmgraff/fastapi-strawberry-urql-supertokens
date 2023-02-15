@@ -34,11 +34,11 @@ export default function Main() {
                 </ul>
             </div>
             <Routes>
-                    <Route path="/" element={
-                        <SessionAuth>
-                            <HomePage />
-                        </SessionAuth>
-                    } />
+                <Route path="/" element={
+                    <SessionAuth>
+                        <HomePage />
+                    </SessionAuth>
+                } />
                 {getSuperTokensRoutesForReactRouterDom(reactRouterDom)}
             </Routes>
         </div>
