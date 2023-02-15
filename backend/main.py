@@ -46,7 +46,11 @@ app.add_middleware(
         )
 
 schema = strawberry.Schema(query=Query, mutation=Mutation)
-app.include_router(GraphQLRouter(schema), prefix="/graphql", dependencies=[Depends(verify_session())])
+app.include_router(
+        GraphQLRouter(schema),
+        prefix="/graphql",
+        dependencies=[Depends(verify_session())]
+)
 
 if __name__ == "__main__":
     reload = os.getenv("PROD") != "1"
