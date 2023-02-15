@@ -1,4 +1,4 @@
-# FastAPI, Strawberry, React, URQL Project Template
+# FastAPI, Strawberry, React, URQL, SuperTokens Project Template
 
 This project is meant to be a starting point for the following stack:
  - FastAPI
