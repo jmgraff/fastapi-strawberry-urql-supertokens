@@ -23,7 +23,7 @@ services:
           MYSQL_PASSWORD: supertokens
           MYSQL_DATABASE: supertokens
   supertokens:
-    image: registry.supertokens.io/supertokens/supertokens-mysql
+    image: supertokens/supertokens-mysql
     ports:
       - 3567:3567
     environment:
