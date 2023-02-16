@@ -24,7 +24,5 @@ services:
           MYSQL_DATABASE: supertokens
   supertokens:
     image: supertokens/supertokens-mysql
-    ports:
-      - 3567:3567
     environment:
       - MYSQL_CONNECTION_URI="mysql://supertokens:supertokens@mysql/supertokens"
