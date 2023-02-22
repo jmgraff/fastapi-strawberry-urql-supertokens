@@ -5,10 +5,10 @@ This project is meant to be a starting point for the following stack:
  - Strawberry GraphQL
  - ReactJS
  - URQL
- - SuperTokens.
+ - SuperTokens
 
 An in-depth article explaining this code is available on codehammer.io:
-https://codehammer.io/full-stack-graphql-example-fastapi-strawberry-and-urql
+https://codehammer.io/full-stack-example-secure-your-fastapi-react-app-with-supertokens/
 
 ## Requirements
 
